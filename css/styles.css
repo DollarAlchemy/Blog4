@@ -1,1 +1,28 @@
-/* Placeholder CSS */
+/* Full CSS Styling */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+:root {
+    --bg-color: #faf3e0;
+    --text-color: #4a4a4a;
+    --header-color: #7b5840;
+    --footer-bg: #fff7e6;
+}
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-color: #c8e6c9;
+    --footer-bg: #1c1c1c;
+} /* Add more styles here */
